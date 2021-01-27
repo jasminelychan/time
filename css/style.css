@@ -3,6 +3,25 @@
     padding: 0;
 }
 
+/* @media screen and (max-width:600px){
+    #container{
+    display: flex;
+    flex-flow: row wrap;
+    height: 1000px; 
+    }
+    .box{
+    width: auto;
+    height: 10vh;
+    padding: 20px;
+    background-color: #abed79;  
+    transition: height 1s ease-out 0.1s;
+    }
+    .box:hover{
+    height: 100vh;
+    }
+} */
+
+
 body{
     color: black;
     font-family: helvetica, sans-serif;
@@ -15,7 +34,7 @@ h1{
     font-style: normal;
     text-align: center;
     font-size: 1.5rem;
-    padding: 20px;
+
 }
 
 h2{
@@ -43,25 +62,113 @@ p{
 #container{
     display:flex;
     flex-flow: columm nowrap;
-    /* height: 100vh; */
+    overflow-y: hidden;
+    height: 1000px;
+
+
 }
 
+.box .imgs{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    width:30%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-out 0.1s;
+
+}
+
+.box:hover .imgs{
+    opacity: 1;
+}
+
+.number{
+    color: rgba(0,0,0,1);
+    transition: color 0.1s ease-out;
+}
+
+.number:hover{
+    color: rgba(0,0,0,0);
+}
+
+.box{
+    width: 20vw;
+    height: auto;
+    padding: 20px;
+    background-color:white;  
+    transition: width 1s ease-out 0.1s;
+}
+
+.box:hover{
+    color: rgba(0,0,0,0);
+    width: 100vw;
+
+}
+
+.box .content{
+    color: rgba(0,0,0,0);
+    transition: color 0.1s ease-out;
+}
+
+.box:hover .content{
+    color: rgba(0,0,0,1);
+}
+
+.color1{
+    background-color: #abed79; 
+}
+
+.color2{
+    background-color: #49a0f2; 
+}
+
+.color3{
+    background-color: #ffb86b; 
+}
+
+.color4{
+    background-color: #8C8ADA; 
+}
+
+.color5{
+    background-color: #fabbdf; 
+}
+
+.color6{
+    background-color: #fffa6e; 
+}
+
+.color7{
+    background-color: #36e3a9; 
+}
+
+
+
+
+
+
+
+/*
 .box1 .number{
-    /* visibility: visible; */
+    
     color: rgba(0,0,0,1);
     transition: color 0.1s ease-out;
     
 }
 
+
+
 .box1:hover .number{
-    /* visibility: hidden; */
+    
     color: rgba(0,0,0,0);
 }
 
 .box1{
     width: 20vw;
     height: auto;
-    /* border: 3px solid black; */
+    
     padding: 20px;
     background-color: #abed79;  
     transition: width 1s ease-out 0.1s;
@@ -93,7 +200,7 @@ p{
 .box2{
     width: 20vw;
     height: auto;
-    /* border: 1px solid black; */
+    
     padding: 20px;
     background-color: #49a0f2;  
     transition: width 1s ease-out;
@@ -105,14 +212,11 @@ p{
 }
 
 .box2 .content{
-    /* visibility: hidden; */
     opacity: 0;
     transition-property: opacity 5s ease-out;
 }
 
 .box2:hover .content{
-    /* background-color: pink; */
-    /* visibility: visible; */
     opacity: 1;
 }
 
@@ -129,7 +233,6 @@ p{
 .box3{
     width: 20vw;
     height: auto;
-    /* border: 1px solid black; */
     padding: 20px;
     background-color: #ffb86b;  
     transition: width 2s ease-out;
@@ -144,7 +247,6 @@ p{
 }
 
 .box3:hover .content{
-    /* background-color: pink; */
     visibility: visible;
 }
 
@@ -161,7 +263,6 @@ p{
 .box4{
     width: 20vw;
     height: auto;
-    /* border: 1px solid black; */
     padding: 20px;
     background-color: #8C8ADA;  
     transition: width 2s ease-out;
@@ -177,7 +278,6 @@ p{
 }
 
 .box4:hover .content{
-    /* background-color: pink; */
     visibility: visible;
 }
 
@@ -194,7 +294,6 @@ p{
 .box5{
     width: 20vw;
     height: auto;
-    /* border: 1px solid black; */
     padding: 20px;
     background-color: #fabbdf;  
     transition: width 2s ease-out;
@@ -210,7 +309,6 @@ p{
 }
 
 .box5:hover .content{
-    /* background-color: pink; */
     visibility: visible;
 }
 
@@ -227,7 +325,6 @@ p{
 .box6{
     width: 20vw;
     height: auto;
-    /* border: 1px solid black; */
     padding: 20px;
     background-color: #fffa6e;  
     transition: width 2s ease-out;
@@ -243,7 +340,6 @@ p{
 }
 
 .box6:hover .content{
-    /* background-color: pink; */
     visibility: visible;
 }
 
@@ -260,7 +356,6 @@ p{
 .box7{
     width: 20vw;
     height: auto;
-    /* border: 1px solid black; */
     padding: 20px;
     background-color: #36e3a9;  
     transition: width 0.5s ease-out;
@@ -276,6 +371,6 @@ p{
 }
 
 .box7:hover .content{
-    /* background-color: pink; */
     visibility: visible;
 }
+*/
